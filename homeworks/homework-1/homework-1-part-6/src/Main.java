@@ -8,6 +8,7 @@ public class Main
         final double inchesInMeter = 39.3701;
         final double yardInMeter = 1.09361;
         final double mileInMeter = 0.000621371;
+
         System.out.println("Enter count meters: ");
         distanceInMeters = scanner.nextDouble();
 
@@ -40,9 +41,5 @@ public class Main
         }
 
         System.out.println("Result: " + result);
-
-
-
-
     }
 }
