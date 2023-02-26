@@ -1,4 +1,5 @@
 import java.util.Scanner;
+
 public class Main
 {
     public static void main(String[] args)
@@ -38,8 +39,10 @@ public class Main
             case 3:
                 result *= yardInMeter;
                 break;
+            default:
+                throw new IllegalStateException("Unexpected value: " + answer);
         }
-
+        
         System.out.println("Result: " + result);
     }
 }
