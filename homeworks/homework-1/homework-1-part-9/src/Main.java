@@ -1,9 +1,16 @@
+import java.util.Scanner;
+import java.util.Random;
 
 public class Main
 {
-    public static void initArrayRandomNumbers()
+    public static void initArrayRandomNumbers(int[] arr, int countNumbers)
     {
-        // FIXME add array initializer
+        Random random = new Random();
+
+        for (int i = 0; i < countNumbers; i++)
+        {
+            arr[i] = random.nextInt(100);
+        }
     }
 
     public static void findMaxValue()
@@ -16,7 +23,17 @@ public class Main
 
     public static void main(String[] args)
     {
-        int[] numbers = {19, 10, 8, 17, 9};
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter count of numbers in array: ");
 
+        int countNumbers = scanner.nextInt();
+        int[] numbers = new int [countNumbers];
+
+        initArrayRandomNumbers(numbers, countNumbers);
+
+        for (int i = 0; i < countNumbers; i++)
+        {
+            System.out.print(numbers[i] + " ");
+        }
     }
 }
