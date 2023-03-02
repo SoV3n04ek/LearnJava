@@ -125,14 +125,42 @@ public class Main
         return positiveNumbersArr;
     }
 
+    public static void printArray(int arr[])
+    {
+        if (arr == null)
+            return;
+        for (int i = 0; i < arr.length; i++)
+        {
+            System.out.print(arr[i] + " ");
+        }
+        System.out.print("\n");
+    }
+
+
     public static void main(String[] args)
     {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Enter count symbols in array: ");
+        System.out.print("Enter count numbers in array: ");
         int count = scanner.nextInt();
         int[] arr = new int [count];
 
-        
+        initArrByRandomNumbers(arr, count);
+
+        System.out.println("Array with random numbers: ");
+        printArray(arr);
+        System.out.print("\n");
+
+        System.out.println("Array with only even numbers: ");
+        printArray(getArrayWithOnlyEvenNumbers(arr));
+
+        System.out.println("Array with only uneven numbers: ");
+        printArray(getArrayWithOnlyUnevenNumbers(arr));
+
+        System.out.println("Array with only negative numbers: ");
+        printArray(getArrayWithOnlyNegativeNumbers(arr));
+
+        System.out.println("Array with only positive numbers: ");
+        printArray(getArrayWithOnlyPositiveNumbers(arr));
     }
 }
