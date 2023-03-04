@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class Main
 {
-    public static void SortArray(int[] arr)
+    public static void sortArrayByAscending(int[] arr)
     {
         for (int i = 0; i < arr.length; i++)
         {
@@ -19,7 +19,7 @@ public class Main
         }
     }
 
-    public static void SortArrayByAscending(int[] arr)
+    public static void sortArrayByDescending(int[] arr)
     {
         for (int i = 0; i < arr.length; i++)
         {
@@ -71,11 +71,23 @@ public class Main
         System.out.println("Array after init: ");
         printArr(arr);
 
+        System.out.print("\nSort array by:" +
+                "\nEnter 1 - if you want to sort array by ascending;\n" +
+                "Enter 2 - if you want to sort array by descending;\n " +
+                "Enter your answer: ");
+
+        int answer = scanner.nextInt();
+
+        if (answer == 1)
+        {
+            sortArrayByAscending(arr);
+        }
+        else
+        {
+            sortArrayByDescending(arr);
+        }
+
         System.out.println("\nArray after sort:\n");
-        SortArrayByAscending(arr);
-
         printArr(arr);
-
-        if ()
     }
 }
