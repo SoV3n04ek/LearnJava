@@ -5,6 +5,8 @@ public class Main
 {
     public static void sortArrayByAscending(int[] arr)
     {
+        if (arr == null) return;
+
         for (int i = 0; i < arr.length; i++)
         {
             for (int j = 0; j < arr.length - i - 1; j++)
@@ -21,6 +23,8 @@ public class Main
 
     public static void sortArrayByDescending(int[] arr)
     {
+        if (arr == null) return;
+
         for (int i = 0; i < arr.length; i++)
         {
             for (int j = 0; j < arr.length - i - 1  ; j++)
@@ -63,6 +67,7 @@ public class Main
     {
         Scanner scanner = new Scanner(System.in);
 
+
         int size = 25;
         int[] arr = new int[size];
 
@@ -88,7 +93,7 @@ public class Main
         }
 
         System.out.println("\nArray after sort:\n");
-        
+
         printArr(arr);
     }
 }
