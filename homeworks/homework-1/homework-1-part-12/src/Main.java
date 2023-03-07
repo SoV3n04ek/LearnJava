@@ -67,7 +67,6 @@ public class Main
     {
         Scanner scanner = new Scanner(System.in);
 
-
         int size = 25;
         int[] arr = new int[size];
 
