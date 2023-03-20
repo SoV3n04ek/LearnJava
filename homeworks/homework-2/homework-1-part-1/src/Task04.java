@@ -68,7 +68,6 @@ public class Task04 {
             System.out.println("Kettle " + getName());
         }
 
-
         @Override
         public void Desc()
         {
@@ -85,16 +84,28 @@ public class Task04 {
             super(name, description);
         }
 
+        @Override
+        public void Sound()
+        {
+            System.out.println("slight humming noise");
+        }
 
+        @Override
+        public void Show()
+        {
+            System.out.println("MicrowaveOven " + getName());
+        }
 
-
+        @Override
+        public void Desc()
+        {
+            System.out.println("Microwave ovens heat food using microwaves, a form of electromagnetic radiation similar to radio waves. \n" +
+                    "Microwaves have three characteristics that allow them to be used in cooking:\n they are reflected by metal;\n they pass through glass, paper, plastic, and similar materials;\n and they are absorbed by foods.\n");
+        }
     }
-
-
 
     public static void main(String[] args)
     {
 
     }
-
 }
