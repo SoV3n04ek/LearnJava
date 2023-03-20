@@ -1,6 +1,8 @@
 import java.util.Scanner;
+
 public class Main
 {
+
     public static void printLine(String symbol, boolean isHorizontal, int length)
     {
         for (int i = 0; i < length; i++)
@@ -11,7 +13,6 @@ public class Main
                 System.out.println(symbol);
         }
     }
-
 
     public static void main(String[] args)
     {
